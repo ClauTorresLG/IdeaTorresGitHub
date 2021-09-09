@@ -1,0 +1,378 @@
+/*
+detalles gráficos
+
+colores:
+azul oscuro: #021f59
+azul claro: #1D64f2
+verde: #04d9c4
+rosa: #9f2c52
+blanco: #E8E8E8
+
+tipografías:
+font-family: 'Comfortaa', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Noto Serif SC', serif;
+*/
+
+*{
+    margin: 0;
+    border: 0;
+}
+body{
+    background-color: #E8E8E8;
+}
+header{
+    width: 100%;
+    height: 120px;
+}
+.logo{
+    width: 100%;
+    height: 80px;
+}
+.logo img{
+    width: 20%;
+    margin: 20px 50px;
+}
+.menu{
+    background-color: #021f59;
+    width: 95%;
+    height: 40px;
+    margin: auto;
+}
+.menu ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 8px 0;
+    list-style: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+}
+.menu li a{
+    font-size: 18px;
+    text-align: center;
+    color: #E8E8E8;
+    text-decoration: none;
+}
+
+/*index*/
+main{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 350px;
+    grid-template-areas: "frase gif gif";
+    grid-column-gap: 4%;
+    justify-content: center;
+}
+.frase{
+    grid-area: frase;
+    font-family: 'Noto Serif SC', serif;
+    font-size: xx-large;
+    line-height: 1.5em;
+    color: #021f59;
+    background-color: #04d9c4;
+    text-align: center;
+    padding: 50px;
+}
+.gif{
+    grid-area: gif;
+    background-color: #021f59;
+}
+.gif img{
+    height: 350px;
+    margin: 0 8%;
+}
+#noticias{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 150px 150px 150px 150px 150px;
+    grid-template-areas: "noticia1 noticia2 sn1"
+                         "noticia1 noticia2 sn2"
+                         "noticia3 noticia2 sn3"
+                         "noticia3 noticia4 sn4"
+                         "noticia3 noticia4 sn5";
+    grid-column-gap: 4%;
+    grid-row-gap: 20px;
+    justify-content: center;
+}
+#noticias .noticia1{
+    grid-area: noticia1;
+}
+#noticias .noticia2{
+    grid-area: noticia2;
+}
+#noticias .noticia3{
+    grid-area: noticia3;
+}
+#noticias .noticia4{
+    grid-area: noticia4;
+}
+#noticias .sn1{
+    grid-area: sn1;
+}
+#noticias .sn2{
+    grid-area: sn2;
+}
+#noticias .sn3{
+    grid-area: sn3;
+}
+#noticias .sn4{
+    grid-area: sn4;
+}
+#noticias .sn5{
+    grid-area: sn5;
+}
+#noticias .noticia1, 
+#noticias .noticia2, 
+#noticias .noticia3, 
+#noticias .noticia4, 
+#noticias .sn1, 
+#noticias .sn2, 
+#noticias .sn3, 
+#noticias .sn4, 
+#noticias .sn5{
+    border: solid 5px #1D64f2;
+    font-family: 'Comfortaa', cursive;
+    color: #021f59;
+    text-align: center;
+}
+#galeria{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 300px 300px;
+    grid-template-areas: "foto1 foto2 resultados"
+                         "foto3 foto4 resultados";
+    grid-column-gap: 4%;
+    grid-row-gap: 20px;
+    justify-content: center;
+}
+#galeria .foto1{
+    grid-area: foto1;
+}
+#galeria .foto2{
+    grid-area: foto2;
+}
+#galeria .foto3{
+    grid-area: foto3;
+}
+#galeria .foto4{
+    grid-area: foto4;
+}
+#galeria .resultados{
+    grid-area: resultados;
+}
+#galeria .foto1,
+#galeria .foto2,
+#galeria .foto3,
+#galeria .foto4{
+    border: solid 5px #04d9c4;
+    font-family: 'Comfortaa', cursive;
+    color: #021f59;
+    text-align: center;
+}
+#galeria .resultados{
+    border: solid 5px #021f59;
+    font-family: 'Comfortaa', cursive;
+    color: #021f59;
+    text-align: center;
+}
+#blog{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 350px 350px;
+    grid-template-areas: "entrada1 entrada1 entrada2"
+                         "entrada1 entrada1 entrada3";
+    grid-column-gap: 4%;
+    grid-row-gap: 20px;
+    justify-content: center;
+}
+#blog .entrada1{
+    grid-area: entrada1;
+}
+#blog .entrada2{
+    grid-area: entrada2;
+}
+#blog .entrada3{
+    grid-area: entrada3;
+}
+#blog .entrada1,
+#blog .entrada2,
+#blog .entrada3{
+    border: solid 5px #9f2c52;
+    font-family: 'Comfortaa', cursive;
+    color: #021f59;
+    text-align: center;
+}
+
+/*noticias*/
+#notColombia{
+    margin: auto;
+    display: grid;
+    grid-template-columns: 80%;
+    grid-template-rows: auto;
+    grid-template-areas: "h1"
+                         "not1"
+                         "img1"
+                         "not2";
+    grid-column-gap: 4%;
+    justify-content: center;
+}
+#notColombia h1{
+    grid-area: h1;
+    font-family: 'Noto Serif SC', serif;
+    text-align: center;
+    color: #021f59;
+    padding: 20px;
+}
+#notColombia .parte1{
+    grid-area: not1;
+}
+#notColombia .parte2{
+    grid-area: not2;
+}
+#notColombia .parte1,
+#notColombia .parte2{
+    width: 80%;
+    margin: auto;
+    font-family: 'Lato', sans-serif;
+    text-align: justify;
+    color: #021f59;
+    padding: 20px;
+}
+#notColombia img{
+    grid-area: img1;
+    margin: auto;
+    width: 80%;
+}
+
+/*aprende*/
+#aprende{
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: auto;
+    grid-template-areas: "foto1 foto2 foto3";
+    grid-column-gap: 2%;
+    grid-row-gap: 20px;
+    justify-content: center;
+}
+#aprende .foto1{
+    grid-area: foto1;
+}
+#gaprende .foto2{
+    grid-area: foto2;
+}
+#aprende .foto3{
+    grid-area: foto3;
+}
+#aprende .foto1 img,
+#aprende .foto2 img,
+#aprende .foto3 img{
+    width: 100%;
+    margin: auto;
+    border: solid 5px #04d9c4;
+}
+
+/*blog*/
+#entrada{
+    margin: auto;
+    display: grid;
+    grid-template-columns: 90%;
+    grid-template-rows: auto;
+    grid-template-areas: "h1"
+                         "tex1"
+                         "foto3"
+                         "tex2";
+    grid-column-gap: 4%;
+    justify-content: center;
+}
+#entrada h1{
+    grid-area: h1;
+    font-family: 'Noto Serif SC', serif;
+    text-align: center;
+    color: #021f59;
+    padding: 20px;
+}
+#entrada .tex1{
+    grid-area: tex1;
+}
+#entrada .tex2{
+    grid-area: tex2;
+}
+#entrada .tex1 p,
+#entrada .tex2 p{
+    width: 80%;
+    margin: auto;
+    font-family: 'Lato', sans-serif;
+    text-align: justify;
+    color: #021f59;
+    padding: 20px;
+}
+#entrada img{
+    grid-area: fot3;
+    margin: 0 10%;
+    width: 80%;
+}
+
+
+/*contacto*/
+#forma{
+    background-color: #2983a6;
+    width: 500px;
+    height: 300px;
+    margin: 10px 30px;
+    padding: 20px 30px;
+    color: #023859;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+}
+#forma .titulo{
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+/*footer*/
+#pieDePagina{
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 90px;
+    background-color: #021f59;
+}
+#pieDePagina .logoBajo{
+    position: relative;
+    margin: 20px 40px;
+    background-image: url(../imgs/logoIndex.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 40px;
+    float: left;
+}
+#pieDePagina .copyRight{
+    position: relative;
+    width: 20%;
+    font-family: 'Lato', sans-serif;
+    font-size: small;
+    text-align: center;
+    color: #E8E8E8;
+    padding: 30px;
+    float: left;
+}
+#pieDePagina .datosContacto{
+    position: relative;
+    width: 40%;
+    font-family: 'Lato', sans-serif;
+    font-size: small;
+    color: #E8E8E8;
+    text-align: right;
+    float: right;
+    padding: 10px 40px 0 0;
+    bottom: 0;
+}
