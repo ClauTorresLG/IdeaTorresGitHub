@@ -6,7 +6,6 @@ azul oscuro: #021f59
 azul claro: #1D64f2
 verde: #04d9c4
 rosa: #9f2c52
-blanco: #E8E8E8
 
 tipografías:
 font-family: 'Comfortaa', cursive;
@@ -19,262 +18,272 @@ font-family: 'Noto Serif SC', serif;
     border: 0;
 }
 body{
-    background-color: #E8E8E8;
+    background-color: #f2f2f2;
 }
+
+/*navbar*/
 header{
-    width: 100%;
-    height: 120px;
-}
-.logo{
-    width: 100%;
-    height: 80px;
+    width: 92%;
+    margin: auto;
 }
 .logo img{
-    width: 20%;
-    margin: 20px 50px;
+    width: 40%;
+    margin: 20px 20px 10px;
 }
 .menu{
     background-color: #021f59;
-    width: 95%;
-    height: 40px;
-    margin: auto;
 }
 .menu ul{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 8px 0;
+    padding: 4px 0;
     list-style: none;
     font-family: 'Lato', sans-serif;
-    font-weight: 600;
 }
 .menu li a{
-    font-size: 18px;
     text-align: center;
     color: #E8E8E8;
     text-decoration: none;
+    font-size: small;
 }
 
 /*index*/
 main{
-    margin: 20px;
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
-    grid-template-rows: 350px;
-    grid-template-areas: "frase gif gif";
-    grid-column-gap: 4%;
-    justify-content: center;
+    width: 92%;
+    height: auto;
+    margin: 10px auto 0;
 }
 .frase{
-    grid-area: frase;
-    font-family: 'Noto Serif SC', serif;
-    font-size: xx-large;
+    padding: 5px 10px;
+    font-family: 'Lato', sans-serif;
+    font-size: medium;
     line-height: 1.5em;
     color: #021f59;
     background-color: #04d9c4;
     text-align: center;
-    padding: 50px;
 }
 .gif{
-    grid-area: gif;
-    background-color: #021f59;
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
 }
 .gif img{
-    height: 350px;
-    margin: 0 8%;
+    width: 98%;
+    border: solid #021f59;
 }
-#noticias{
-    margin: 20px;
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
-    grid-template-rows: 150px 150px 150px 150px 150px;
-    grid-template-areas: "noticia1 noticia2 sn1"
-                         "noticia1 noticia2 sn2"
-                         "noticia3 noticia2 sn3"
-                         "noticia3 noticia4 sn4"
-                         "noticia3 noticia4 sn5";
-    grid-column-gap: 4%;
-    grid-row-gap: 20px;
-    justify-content: center;
-}
-#noticias .noticia1{
-    grid-area: noticia1;
-}
-#noticias .noticia2{
-    grid-area: noticia2;
-}
-#noticias .noticia3{
-    grid-area: noticia3;
-}
-#noticias .noticia4{
-    grid-area: noticia4;
-}
-#noticias .sn1{
-    grid-area: sn1;
-}
-#noticias .sn2{
-    grid-area: sn2;
-}
-#noticias .sn3{
-    grid-area: sn3;
-}
-#noticias .sn4{
-    grid-area: sn4;
-}
-#noticias .sn5{
-    grid-area: sn5;
-}
-#noticias .noticia1, 
-#noticias .noticia2, 
-#noticias .noticia3, 
-#noticias .noticia4, 
-#noticias .sn1, 
-#noticias .sn2, 
-#noticias .sn3, 
-#noticias .sn4, 
-#noticias .sn5{
-    border: solid 5px #1D64f2;
+.t1 h2,
+.t2 h2,
+.t3 h2{
+    width: 92%;
+    margin: 10px auto 0;
     font-family: 'Comfortaa', cursive;
-    color: #021f59;
+    padding: 10px 0;
     text-align: center;
 }
+.t1 h2{
+    background-color: #1D64f2;
+    color: #f2f2f2;
+}
+.t2 h2{
+    background-color: #04d9c4;
+    color: #021f59
+}
+.t3 h2{
+    background-color: #9f2c52;
+    color: #f2f2f2;
+}
+.t1 a,
+.t2 a,
+.t3 a{
+    text-decoration: none;
+}
+#noticias{
+    width: 92%;
+    height: auto;
+    margin: 5px auto 1%;
+    background-color: #1D64f2;
+    padding: 10px 0;
+}
+#noticias a{
+    text-decoration: none;
+}
+.noticia1,
+.noticia2,
+.noticia3,
+.noticia4{
+    width: 100%;
+    margin: 0 auto 10PX;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#noticias .card-img-top{
+    width: 90%;
+    height: auto;
+    margin: 0 5%;
+}
+#noticias .card-body{
+    margin-bottom: 10px;
+    background-color: #1D64f2;
+    padding: 5px 20px 15px;
+    font-family: 'Lato', sans-serif;
+    color: #f2f2f2;
+}
+#noticias h3{
+    color: #021f59;
+}
 #galeria{
-    margin: 20px;
+    width: 92%;
+    height: auto;
+    margin: 5px auto;
     display: grid;
-    grid-template-columns: 30% 30% 30%;
-    grid-template-rows: 300px 300px;
-    grid-template-areas: "foto1 foto2 resultados"
-                         "foto3 foto4 resultados";
-    grid-column-gap: 4%;
-    grid-row-gap: 20px;
-    justify-content: center;
+    background-color: #04d9c4;
+    grid-template-columns: 48% 48%;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-areas: "foto1 foto2"
+                         "foto3 foto4"
+                         "foto5 foto6";
+    justify-content: space-around;
 }
 #galeria .foto1{
     grid-area: foto1;
+    background-image: url(../imgs/sq1.jpeg);
 }
 #galeria .foto2{
     grid-area: foto2;
+    background-image: url(../imgs/sq2.png);
 }
 #galeria .foto3{
     grid-area: foto3;
+    background-image: url(../imgs/sq3.png);
 }
 #galeria .foto4{
     grid-area: foto4;
+    background-image: url(../imgs/sq6.jpeg);
 }
-#galeria .resultados{
-    grid-area: resultados;
+#galeria .foto5{
+    grid-area: foto5;
+    background-image: url(../imgs/sq5.jpeg);
+}
+#galeria .foto6{
+    grid-area: foto6;
+    background-image: url(../imgs/sq4.jpeg.crdownload);
 }
 #galeria .foto1,
 #galeria .foto2,
 #galeria .foto3,
-#galeria .foto4{
-    border: solid 5px #04d9c4;
-    font-family: 'Comfortaa', cursive;
-    color: #021f59;
-    text-align: center;
-}
-#galeria .resultados{
-    border: solid 5px #021f59;
-    font-family: 'Comfortaa', cursive;
-    color: #021f59;
-    text-align: center;
+#galeria .foto4,
+#galeria .foto5,
+#galeria .foto6{
+    width: 95%;
+    height: 90%;
+    margin: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 #blog{
-    margin: 20px;
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
-    grid-template-rows: 350px 350px;
-    grid-template-areas: "entrada1 entrada1 entrada2"
-                         "entrada1 entrada1 entrada3";
-    grid-column-gap: 4%;
-    grid-row-gap: 20px;
-    justify-content: center;
+    width: 92%;
+    height: auto;
+    margin: 5px auto 10px;
+    padding: 10px 0;
+    text-align: justify;
+    background-color: #9f2c52;
 }
-#blog .entrada1{
-    grid-area: entrada1;
-}
-#blog .entrada2{
-    grid-area: entrada2;
-}
-#blog .entrada3{
-    grid-area: entrada3;
-}
-#blog .entrada1,
-#blog .entrada2,
-#blog .entrada3{
-    border: solid 5px #9f2c52;
-    font-family: 'Comfortaa', cursive;
+#blog .card{
+    width: 80%;
+    height: auto;
+    margin: 5px auto 10px;
+    background-color: #f2f2f2;
+    border-radius: 3px;
+    font-family: 'Lato', sans-serif;
     color: #021f59;
+    text-align: left;
+    padding: 10px 20px;
+}
+#blog .card-title{
+    width: 80%;
+    margin: auto;
+    padding-bottom: 5px;
     text-align: center;
 }
+#blog .card-link{
+    text-decoration: none;
+    color: #9f2c52;
+    margin-left: 80%;
+}
+
 
 /*noticias*/
 #notColombia{
+    width: 92%;
     margin: auto;
-    display: grid;
-    grid-template-columns: 80%;
-    grid-template-rows: auto;
-    grid-template-areas: "h1"
-                         "not1"
-                         "img1"
-                         "not2";
-    grid-column-gap: 4%;
-    justify-content: center;
 }
 #notColombia h1{
-    grid-area: h1;
+    width: 90%;
+    margin: auto;
     font-family: 'Noto Serif SC', serif;
     text-align: center;
+    font-size: 1.2em;
     color: #021f59;
-    padding: 20px;
-}
-#notColombia .parte1{
-    grid-area: not1;
-}
-#notColombia .parte2{
-    grid-area: not2;
+    padding: 10px;
 }
 #notColombia .parte1,
 #notColombia .parte2{
-    width: 80%;
+    width: 90%;
     margin: auto;
     font-family: 'Lato', sans-serif;
     text-align: justify;
     color: #021f59;
-    padding: 20px;
+    padding: 10px;
 }
 #notColombia img{
-    grid-area: img1;
-    margin: auto;
-    width: 80%;
+    width: 90%;
+    margin: 10px 1.3rem;
 }
 
 /*aprende*/
 #aprende{
-    margin: 20px auto;
+    width: 92%;
+    height: auto;
+    margin: 10px auto 30px;
     display: grid;
-    grid-template-columns: 30% 30% 30%;
+    grid-template-columns: 48.5% 48.5%;
     grid-template-rows: auto;
-    grid-template-areas: "foto1 foto2 foto3";
-    grid-column-gap: 2%;
-    grid-row-gap: 20px;
+    grid-template-areas: "foto1 foto2"
+                         "foto3 foto4"
+                         "foto5 foto6";
+    column-gap: 2%;
+    row-gap: 2%;
     justify-content: center;
 }
 #aprende .foto1{
     grid-area: foto1;
 }
-#gaprende .foto2{
+#aprende .foto2{
     grid-area: foto2;
 }
 #aprende .foto3{
     grid-area: foto3;
 }
+#aprende .foto4{
+    grid-area: foto4;
+}
+#aprende .foto5{
+    grid-area: foto5;
+}
+#aprende .foto6{
+    grid-area: foto6;
+}
 #aprende .foto1 img,
 #aprende .foto2 img,
-#aprende .foto3 img{
+#aprende .foto3 img,
+#aprende .foto4 img,
+#aprende .foto5 img,
+#aprende .foto6 img{
     width: 100%;
     margin: auto;
-    border: solid 5px #04d9c4;
 }
 
 /*blog*/
@@ -318,61 +327,237 @@ main{
     width: 80%;
 }
 
-
 /*contacto*/
 #forma{
+    width: 82%;
+    height: 360px;
+    margin: 20px auto;
     background-color: #2983a6;
-    width: 500px;
-    height: 300px;
-    margin: 10px 30px;
-    padding: 20px 30px;
+    padding: 10px;
     color: #023859;
     font-family: 'Lato', sans-serif;
-    font-size: 18px;
+    font-size: small;
     line-height: 24px;
 }
 #forma .titulo{
     font-family: 'Lato', sans-serif;
-    font-weight: 800;
     text-decoration: underline;
 }
 
 /*footer*/
 #pieDePagina{
-    left: 0;
-    bottom: 0;
-    width: 100%;
+    width: 92%;
     height: 90px;
+    margin: auto;
     background-color: #021f59;
+    display: flex;
 }
 #pieDePagina .logoBajo{
-    position: relative;
-    margin: 20px 40px;
+    width: 200px;
+    height: 40px;
+    margin: 30px 20px 0;
     background-image: url(../imgs/logoIndex.png);
     background-size: contain;
     background-repeat: no-repeat;
-    width: 250px;
-    height: 40px;
-    float: left;
-}
-#pieDePagina .copyRight{
-    position: relative;
-    width: 20%;
-    font-family: 'Lato', sans-serif;
-    font-size: small;
-    text-align: center;
-    color: #E8E8E8;
-    padding: 30px;
-    float: left;
 }
 #pieDePagina .datosContacto{
-    position: relative;
-    width: 40%;
+    width: 35%;
     font-family: 'Lato', sans-serif;
-    font-size: small;
+    font-size: .8rem;
     color: #E8E8E8;
-    text-align: right;
-    float: right;
-    padding: 10px 40px 0 0;
-    bottom: 0;
+    text-align: left;
+    padding: 12px 0 0 5px;
 }
+#pieDePagina .copyRight{
+    width: 45%;
+    font-family: 'Lato', sans-serif;
+    font-size: .4rem;
+    text-align: right;
+    color: #E8E8E8;
+    padding: 50px 20px 0;
+}
+
+
+/*tablet*/
+@media screen and (min-width: 768px){
+    .menu li a{
+        font-size: medium;
+    }
+    main{
+        margin: 10px auto;
+        display: grid;
+        grid-template-columns: 25% 75%;
+        grid-template-rows: 280px;
+        grid-template-areas: "frase gif";
+    }
+    .frase{
+        height: auto;
+        padding-top: 25%;
+        font-size: 1.3rem;
+    }
+    .gif{
+        margin-top: 0;
+        background-color: #021f59;
+    }
+    .gif img{
+        height: 90%;
+        width: auto;
+        margin: 2% 8%;
+    }
+    #noticias{
+        margin: 5px auto;
+        display: grid;
+        grid-template-columns: 49% 49%;
+        grid-template-rows: auto;
+        grid-template-areas: "noticia1 noticia2"
+                             "noticia3 noticia4";
+        justify-content: center;
+    }
+    .noticia1,
+    .noticia2,
+    .noticia3,
+    .noticia4{
+        margin: 10px auto;
+    }
+    #galeria{
+        grid-template-columns: 31% 31% 31%;
+        grid-template-rows: 250px 250px ;
+        grid-template-areas: "foto1 foto2 foto3"
+                             "foto4 foto5 foto6";
+    }
+    #notColombia h1{
+        width: 75%;
+        font-size: 1.4em;
+    }
+    #aprende{
+        margin: 10px auto;
+        grid-template-columns: 32% 32% 32%;
+        grid-template-areas: "foto1 foto2 foto3"
+                             "foto4 foto5 foto6";
+    }
+    #forma{
+        width: 50%;
+        padding-left: 5%;
+        font-size: medium;
+    }
+    #pieDePagina .logoBajo{
+        width: 300px;
+        height: 40px;
+        margin: 25px 30px 0;
+    }
+    #pieDePagina .datosContacto{
+        padding-left: 20px 0;
+    }
+    #pieDePagina .copyRight{
+        font-size: .6rem;
+        padding: 60px 20px 0;
+    }
+}
+
+
+/*pc*/
+@media screen and (min-width: 992px){
+    header{
+        width: 95%;
+        margin: auto;
+    }
+    .logo img{
+        width: 20%;
+    }
+    .menu{
+        margin-top: 10px;
+    }
+    .menu li a{
+        font-size: 1.5rem;
+    }
+    main{
+        width: 95%;
+        margin: 20px auto;
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 450px;
+    }
+    .frase{
+        padding: 22.5% 8% 0;
+        font-size: 2.3rem;
+    }
+    .gif img{
+        margin: 2% 10%;
+    }
+    .t1 h2,
+    .t2 h2,
+    .t3 h2{
+        width: 95%;
+    }
+    #noticias{
+        width: 95%;
+        height: auto;
+        grid-template-columns: 24.5% 24.5% 24.5% 24.5%;
+        grid-template-areas: "noticia1 noticia2 noticia3 noticia4";
+    }
+    #galeria{
+        width: 95%;
+        grid-template-columns: 24% 24% 24% 24%;
+        grid-template-rows: 350px;
+        grid-template-areas: "foto1 foto2 foto3 foto4";
+    }
+    #blog{
+        width: 95%;
+        display: flex;
+    }
+    #blog .card{
+        width: 80%;
+        margin: 10px 3%;
+    }
+    
+    #notColombia h1{
+        font-size: 1.6em;
+    }
+    #notColombia .parte1,
+    #notColombia .parte2{
+        width: 80%;
+        font-size: large;
+        padding: 20px;
+    }
+    #notColombia img{
+        height: 300px;
+        width: auto;
+        margin: 0 30%;
+    }
+    #aprende{
+        width: 95%;
+        margin-bottom: 30px;
+    }
+    #forma{
+        width: 40%;
+        height: 420px;
+        font-size: large;
+    }
+    #pieDePagina{
+        width: 95%;
+        height: 130px;
+    }
+    #pieDePagina .logoBajo{
+        width: 300px;
+        height: 60px;
+        margin: 40px 40px 0;
+    }
+    #pieDePagina .datosContacto{
+        padding: 20px 60px 0;
+        font-size: large;
+    }
+    #pieDePagina .copyRight{
+        font-size: medium;
+        padding: 80px 40px 0;
+    }
+}
+
+/*
+
+
+
+
+
+
+
+
+
